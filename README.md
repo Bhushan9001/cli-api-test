@@ -16,3 +16,15 @@ It helps developers quickly send HTTP requests from the terminal, inspect JSON r
 
 ---
 
+## Examples
+
+# GET request
+apitester get https://api.example.com/data
+
+# POST request with JSON body
+apitester post --url https://api.example.com/create  --body '{"name":"John"}'
+
+# Add headers
+apitester get --url https://api.example.com/secure --headers "Authorization: Bearer YOUR_TOKEN"
+
+
